@@ -19,14 +19,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const imgStyle = 'absolute drop-shadow-lg object-contain blur-[3px] w-1/2 sm:w-fit -z-10'
+  const imgStyle = 'absolute drop-shadow-lg object-contain blur-[3px] w-1/2 md:w-fit -z-10 md:max-w-96 xl:max-h-1/2'
 
   return (
     <html lang="ru">
       <head>
       </head>
       <ThemeRegistry>
-        <body className='flex flex-col min-h-screen overflow-hidden w-screen'>
+        <body className='flex flex-col min-h-screen overflow-x-hidden w-screen relative'>
           {/* <Loader /> */}
           <Header />
           {children}
