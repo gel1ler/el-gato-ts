@@ -45,7 +45,7 @@ const CircleVideo = () => {
                 cancelAnimationFrame(animationFrameId);
             }
         };
-    }, [videoRef.current])
+    }, [])
 
 
     if (value >= 100) {
