@@ -56,7 +56,7 @@ export default function Home() {
 
         {/* 1 */}
         <Box className='w-screen pb-10'>
-          <Box className=' max-w-screen-sm flex justify-center flex-col items-center gap-2 mx-auto'>
+          <Box className='max-w-screen-sm flex justify-center flex-col items-center gap-2 mx-auto px-2'>
             <CircleVideo />
             <Typography variant="h5" textAlign='center' className='mt-2'>
               Дорогие посетители!
@@ -75,7 +75,7 @@ export default function Home() {
 
         {/* 2 */}
         <Box className="w-screen pb-10">
-          <Box className=' max-w-screen-sm flex justify-center flex-col md:flex-row items-center md:items-start gap-4 mx-auto'>
+          <Box className=' max-w-screen-sm flex justify-center flex-col md:flex-row items-center md:items-start gap-4 mx-auto px-2'>
             <Image
               className="drop-shadow-lg"
               src='/phone.png'
@@ -121,7 +121,7 @@ export default function Home() {
 
         {/* 3 */}
         <Box className="w-screen pb-10">
-          <Box className=' max-w-screen-sm flex justify-center flex-col items-center gap-2 mx-auto'>
+          <Box className=' max-w-screen-sm flex justify-center flex-col items-center gap-2 mx-auto px-2'>
             <Typography variant='h6' textAlign='center'>
               Последний шаг. Заполните поля ниже для проверки вашего аккаунта.
             </Typography>

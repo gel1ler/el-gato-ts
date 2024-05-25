@@ -1,18 +1,8 @@
 import ThemeRegistry from '@/customization/theme/ThemeRegistry'
 import './styles/globals.css'
-// import './styles/anims.css'
-// import Footer from '@/components/layout/footer/Footer'
-import Loader from '@/components/layout/loader'
-// import { SpeedInsights } from "@vercel/speed-insights/next"
-// import ScrolledHeader from '@/components/layout/header/types/ScrolledHeader'
 import { Suspense } from 'react'
 import Header from '@/components/layout/Header'
 import Image from 'next/image'
-
-function LoadingFallback() {
-  return <>placeholder</>
-}
-
 
 export default function RootLayout({
   children,
@@ -24,15 +14,14 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
       </head>
       <ThemeRegistry>
-        <body className='flex flex-col min-h-screen overflow-x-hidden w-screen relative'>
-          {/* <Loader /> */}
+        <body className='flex flex-col min-h-screen w-screen relative'>
           <Header />
           <Suspense>
             {children}
           </Suspense>
-          {/* <Footer /> */}
           <Image
             className={`top-0 right-0 ${imgStyle}`}
             src='/leaf-1.png'
