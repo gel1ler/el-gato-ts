@@ -26,7 +26,7 @@ export const themeOptions: ThemeOptions = {
       light: '#F2BB50'
     },
     additional: {
-      main: colors.additional ? colors.additional : '#fff'
+      main: '#ccc5c5'
     },
     helper: {
       main: colors.helper ? colors.helper : '#fff'

@@ -42,17 +42,17 @@ export default function Home() {
 
   else return (
     <>
-      <Snackbar open={openSnack} autoHideDuration={3000} onClose={() => setOpenSnack(false)}>
+      <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'right' }} open={openSnack} autoHideDuration={3000} onClose={() => setOpenSnack(false)}>
         <Alert onClose={() => setOpenSnack(false)} severity="success" sx={{ boxShadow: '0 0 4px 2px rgba(0, 0, 0, .1)' }}>
           Имя аккаунта скопировано
         </Alert>
       </Snackbar>
       <Box
         className='flex justify-center relative transition-transform duration-500'
-        style={{
+        sx={{
           transform: `translateX(${-step * 100}vw)`,
           width: `${length}00vw`,
-          height: 'calc(100vh - 100px - 3rem)'
+          height: 'calc(100svh)',
         }}
       >
 
@@ -68,7 +68,7 @@ export default function Home() {
           <Button variant="contained" onClick={onSubmit}>
             получить подарок
           </Button>
-          <Typography variant="body2" color='#adadad' textAlign='center'>
+          <Typography variant="body2" color='additional.main' textAlign='center'>
             Время получения подарка ~2 минуты
           </Typography>
         </SliderContainer>
@@ -76,6 +76,7 @@ export default function Home() {
         {/* 2 */}
         <SliderContainer row>
           <Image
+            style={{ marginTop: 'calc(100px + 3rem)' }}
             className="drop-shadow-lg"
             src='/phone.png'
             width={210 * 1.2}
@@ -97,7 +98,7 @@ export default function Home() {
             >
               @elGato-ram
             </Typography>
-            <Typography variant="body2" color='#adadad' textAlign='center' mb={2}>
+            <Typography variant="body2" color='additional.main' textAlign='center' mb={2}>
               Нажмите на имя аккаунта, чтобы скопировать его
             </Typography>
 
@@ -118,7 +119,7 @@ export default function Home() {
 
         {/* 3 */}
         <SliderContainer>
-          <Typography variant='h6' textAlign='center'>
+          <Typography variant='h6' textAlign='center' sx={{ mt: 'calc(100px + 3rem)' }}>
             Последний шаг. Заполните поля ниже для проверки вашего аккаунта.
           </Typography>
           <Typography textAlign='center' mt={2}>

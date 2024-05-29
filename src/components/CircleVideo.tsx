@@ -53,10 +53,14 @@ const CircleVideo = () => {
         setPaused(true);
     }
     return (
-        <Box className="aspect-square relative cursor-pointer w-80 flex justify-center items-center" onClick={videoBtnClick}>
+        <Box
+            className="aspect-square relative cursor-pointer w-80 flex justify-center items-center"
+            onClick={videoBtnClick}
+            sx={{ mt: 'calc(100px + 3rem)' }}
+        >
             <video
                 ref={videoRef}
-                className="aspect-square object-cover rounded-full transition-all shadowed"
+                className="aspect-square object-cover rounded-full transition-all"
                 style={{ width: paused ? '18rem' : '20rem' }}
                 playsInline
                 controls={false}

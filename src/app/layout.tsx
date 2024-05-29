@@ -18,11 +18,11 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
       </head>
       <ThemeRegistry>
-        <body className='flex flex-col min-h-screen w-screen relative overflow-hidden'>
+        <body className='flex flex-col w-screen relative overflow-hidden' style={{ height: '100dvh' }}>
           <Leave number={1} left={-40} top={-20} />
           <Leave number={2} right={-50} top={-120} />
           <Leave number={4} right={-20} bottom={-100} />
-          
+
           <Header />
           <Suspense>
             {children}
