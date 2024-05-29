@@ -83,7 +83,10 @@ export default function Home() {
             height={90 * 1.2}
             alt='phone'
           />
-          <Box className="flex flex-col gap-2 self-stretch py-6">
+          <Box
+            className="flex flex-col gap-2 self-stretch py-6"
+            sx={{ mt: 'calc(100px + 3rem)' }}
+          >
             <Typography variant='h6' textAlign='center'>
               Выложите похожую запись себе на страницу в инстаграм и не забудьте <b>упомнянуть наш аккаунт</b>, чтобы робот смог проверить выполнение условий.
             </Typography>
@@ -120,7 +123,7 @@ export default function Home() {
         {/* 3 */}
         <SliderContainer>
           <Typography variant='h6' textAlign='center' sx={{ mt: 'calc(100px + 3rem)' }}>
-            Последний шаг. Заполните поля ниже для проверки вашего аккаунта.
+            Последний шаг. <br /> Заполните поля ниже для проверки вашего аккаунта.
           </Typography>
           <Typography textAlign='center' mt={2}>
             Номер телефона

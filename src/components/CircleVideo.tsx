@@ -64,6 +64,7 @@ const CircleVideo = () => {
                 style={{ width: paused ? '18rem' : '20rem' }}
                 playsInline
                 controls={false}
+                poster="/preview.jpg"
             >
                 <source src="/video.MP4" type="video/mp4" />
                 Your browser does not support the video tag.

@@ -15,7 +15,8 @@ export const Leave = ({ number, top, left, right, bottom }: { number: number, to
                 left,
                 right,
                 top,
-                bottom
+                bottom,
+                width: ['50%', '33vw']
             }}
             className={`absolute w-1/2 max-w-sm aspect-square -z-10`}
         >
