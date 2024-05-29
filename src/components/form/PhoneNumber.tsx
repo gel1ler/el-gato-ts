@@ -37,13 +37,13 @@ export const MuiPhone: React.FC<MUIPhoneProps> = ({
             variant="outlined"
             color="primary"
             placeholder='+7 (XXX) XXX-XX-XX'
-            focused
             value={inputValue}
             onChange={handlePhoneValueChange}
             type="tel"
             error={!inputValue}
             required
             inputRef={inputRef}
+            inputProps={{ style: { color: "#fff" } }}
             {...restProps}
         />
     );

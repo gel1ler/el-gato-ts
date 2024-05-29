@@ -54,7 +54,13 @@ const CircleVideo = () => {
     }
     return (
         <Box className="aspect-square relative cursor-pointer w-80 flex justify-center items-center" onClick={videoBtnClick}>
-            <video ref={videoRef} className="aspect-square object-cover rounded-full transition-all shadowed" style={{ width: paused ? '18rem' : '20rem' }}>
+            <video
+                ref={videoRef}
+                className="aspect-square object-cover rounded-full transition-all shadowed"
+                style={{ width: paused ? '18rem' : '20rem' }}
+                playsInline
+                controls={false}
+            >
                 <source src="/video.MP4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -62,7 +68,7 @@ const CircleVideo = () => {
                 className="w-[20.6rem] aspect-square rounded-full absolute -z-10 drop-shadow-lg  transition-all"
                 sx={{
                     width: paused ? '18.6rem' : '20.6rem',
-                    background: `conic-gradient(#31562c ${value}%, transparent 0)`,
+                    background: `conic-gradient(#B7BD9A ${value}%, transparent 0)`,
                 }}
             >
             </Box>

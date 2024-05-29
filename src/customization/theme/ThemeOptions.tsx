@@ -18,10 +18,11 @@ export const inter = Inter({
 export const themeOptions: ThemeOptions = {
   palette: {
     primary: {
-      main: colors.primary,
+      main: '#47501A',
+      contrastText: '#fff'
     },
     secondary: {
-      main: colors.secondary,
+      main: '#969c78',
       light: '#F2BB50'
     },
     additional: {
@@ -31,7 +32,7 @@ export const themeOptions: ThemeOptions = {
       main: colors.helper ? colors.helper : '#fff'
     },
     background: {
-      default: colors.bg
+      default: '#747b51'
     },
   },
   typography: {
@@ -41,7 +42,10 @@ export const themeOptions: ThemeOptions = {
     h1: {
       fontSize: 45,
       fontWeight: 400
-    }
+    },
+    allVariants: {
+      color: "#fff"
+    },
   },
   components: {
     MuiAppBar: {

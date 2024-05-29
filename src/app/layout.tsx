@@ -3,6 +3,7 @@ import './styles/globals.css'
 import { Suspense } from 'react'
 import Header from '@/components/layout/Header'
 import Image from 'next/image'
+import { Leave } from '@/components/layout/leaves'
 
 export default function RootLayout({
   children,
@@ -17,33 +18,15 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
       </head>
       <ThemeRegistry>
-        <body className='flex flex-col min-h-screen w-screen relative'>
+        <body className='flex flex-col min-h-screen w-screen relative overflow-hidden'>
+          <Leave number={1} left={-40} top={-20} />
+          <Leave number={2} right={-50} top={-120} />
+          <Leave number={4} right={-20} bottom={-100} />
+          
           <Header />
           <Suspense>
             {children}
           </Suspense>
-          <Image
-            className={`top-0 right-0 ${imgStyle}`}
-            src='/leaf-1.png'
-            width={500}
-            height={400}
-            alt='bg leaf'
-          />
-          <Image
-            className={`bottom-0 right-0 ${imgStyle}`}
-            src='/leaf-2.png'
-            width={500}
-            height={400}
-            alt='bg leaf'
-          />
-          <Image
-            className={`top-0 left-0  ${imgStyle}`}
-            style={{ transform: 'scale(-1, 1)' }}
-            src='/leaf-3.png'
-            width={600}
-            height={500}
-            alt='bg leaf'
-          />
         </body>
       </ThemeRegistry>
     </html>
