@@ -9,6 +9,7 @@ import Image from "next/image";
 import { ArrowRightAlt } from "@mui/icons-material";
 import MuiPhone from "@/components/form/PhoneNumber";
 import SliderContainer from "@/components/SliderContainer";
+import { getInfo } from "@/services/inst";
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -31,6 +32,18 @@ export default function Home() {
 
   useEffect(() => {
     setLoading(false)
+    getInfo()
+
+    // const url = `https://graph.instagram.com/4112293751/media?fields=id,media_type,media_url,caption,timestamp,thumbnail_url,permalink&access_token=973006954522664|mlD08j9LHQED1neK26iICGpx1DE`;
+
+    // fetch(url)
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     console.log(data);
+    //   })
+    //   .catch(error => {
+    //     console.error('Ошибка:', error);
+    //   });
 
   }, [])
 
@@ -63,7 +76,7 @@ export default function Home() {
             Дорогие посетители!
           </Typography>
           <Typography variant="h6" textAlign='center' sx={{ letterSpacing: '1px' }}>
-            Спасибо что выбираете кофе в нашем салоне. Если Вы отметите нас в своем инстаграм, то получите <b>купон на 200 рублей</b> на любую услугу.<br /> Ждем Вас в гости!
+            Спасибо, что выбираете кофе в нашем салоне. Если Вы отметите нас в своем Инстаграм, то получите <b>купон на 200 рублей</b> на любую услугу.<br /> Ждем Вас в гости!
           </Typography>
           <Button variant="contained" onClick={onSubmit}>
             получить подарок
@@ -85,7 +98,7 @@ export default function Home() {
           />
           <Box
             className="flex flex-col gap-2 self-stretch py-6"
-            sx={{ mt: 'calc(100px + 3rem)' }}
+            sx={{ mt: [1, 'calc(100px + 3rem)'] }}
           >
             <Typography variant='h6' textAlign='center'>
               Выложите похожую запись себе на страницу в инстаграм и не забудьте <b>упомнянуть наш аккаунт</b>, чтобы робот смог проверить выполнение условий.
