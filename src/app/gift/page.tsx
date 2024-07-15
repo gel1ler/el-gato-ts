@@ -70,7 +70,7 @@ export default function Home() {
             className="drop-shadow-lg"
             src='/phone.png'
             width={210}
-            height={90}
+            height={407}
             alt='phone'
           />
           <Box
@@ -78,7 +78,6 @@ export default function Home() {
             sx={{ mt: [1, 'calc(100px + 3rem)'] }}
           >
             <List>
-
               <ListItemText disableTypography
                 primary={<Typography fontSize={16} textAlign='center'>1. Отметьте нас в Инстаграм</Typography>}
               />
