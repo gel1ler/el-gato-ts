@@ -56,7 +56,6 @@ const CircleVideo = () => {
         <Box
             className="aspect-square relative cursor-pointer w-80 flex justify-center items-center"
             onClick={videoBtnClick}
-            sx={{ mt: 'calc(100px + 3rem)' }}
         >
             <video
                 ref={videoRef}

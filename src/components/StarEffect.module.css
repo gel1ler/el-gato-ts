@@ -1,0 +1,55 @@
+.starContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.star {
+    position: absolute;
+    animation: fall ease-in infinite;
+}
+
+.starImage {
+    width: 15px;
+    height: 15px;
+  }
+
+.left {
+    animation-name: fallLeft;
+}
+
+.right {
+    animation-name: fallRight;
+}
+
+@keyframes fallLeft {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-100vh) translateX(calc(100vw + 50px));
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes fallRight {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-100vh) translateX(calc(-100vw - 50px));
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}

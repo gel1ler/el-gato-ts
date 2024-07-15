@@ -23,7 +23,6 @@ export default function RootLayout({
           <Leave number={2} right={-50} top={-120} />
           <Leave number={4} right={-20} bottom={-100} />
 
-          <Header />
           <Suspense>
             {children}
           </Suspense>

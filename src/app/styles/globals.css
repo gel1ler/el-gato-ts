@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
     overflow-x: hidden;
+}
+
+body {
+    font-family: 'Century Schoolbook', serif !important;
 }
 
 .cls-1 {
