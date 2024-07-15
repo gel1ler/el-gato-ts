@@ -1,5 +1,5 @@
 'use client'
-import { Alert, Box, Button, List, ListItemText, Snackbar,Typography } from "@mui/material";
+import { Alert, Box, Button, List, ListItemText, Snackbar, Typography } from "@mui/material";
 import { useSearchParams } from "next/navigation";
 import { useState } from 'react'
 import { z } from 'zod'
@@ -72,6 +72,9 @@ export default function Home() {
             width={210}
             height={407}
             alt='phone'
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="/placeholder.png"
           />
           <Box
             className="flex flex-col gap-2 self-stretch"
