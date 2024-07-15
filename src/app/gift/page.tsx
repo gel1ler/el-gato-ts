@@ -7,6 +7,9 @@ import { useRouter } from 'next/navigation'
 import CircleVideo from "@/components/CircleVideo";
 import Image from "next/image";
 import SliderContainer from "@/components/SliderContainer";
+
+
+
 export default function Home() {
   const [openSnack, setOpenSnack] = useState(false)
   const router = useRouter()

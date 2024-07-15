@@ -16,6 +16,7 @@ export default function RootLayout({
     <html lang="ru">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+        <title>Салон красоты EL GATO</title>
       </head>
       <ThemeRegistry>
         <body className='flex flex-col w-screen relative overflow-hidden' style={{ height: '100dvh' }}>
