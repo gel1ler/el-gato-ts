@@ -1,21 +1,14 @@
 'use client'
-import { Alert, Box, Button, CircularProgress, List, ListItemText, Snackbar, TextField, Typography, snackbarClasses } from "@mui/material";
+import { Alert, Box, Button, List, ListItemText, Snackbar,Typography } from "@mui/material";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { z } from 'zod'
 import { useRouter } from 'next/navigation'
 import CircleVideo from "@/components/CircleVideo";
 import Image from "next/image";
-import { ArrowRightAlt } from "@mui/icons-material";
-import MuiPhone from "@/components/form/PhoneNumber";
 import SliderContainer from "@/components/SliderContainer";
-import Header from "@/components/layout/Header";
-import StarEffect from "@/components/StarEffect";
 export default function Home() {
-  const [loading, setLoading] = useState(true)
   const [openSnack, setOpenSnack] = useState(false)
-  const [phoneNumber, setPhoneNumber] = useState('')
-  const [instName, setInstName] = useState('')
   const router = useRouter()
 
   const onSubmit = async () => {
