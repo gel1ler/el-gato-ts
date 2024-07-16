@@ -46,17 +46,17 @@ export default function Home() {
           {/* <StarEffect /> */}
           <CircleVideo />
           <Box className='flex justify-center flex-col items-center gap-1'>
-            <Typography variant="h5" textAlign='center' className='mt-2'>
+            <Typography variant="h5" textAlign='center' className='mt-2' fontWeight='bold'>
               Дорогие посетители!
             </Typography>
             <Typography variant="h6" textAlign='center' sx={{ letterSpacing: '1px' }}>
-              Спасибо, что выбираете кофе в нашем салоне. Если Вы отметите нас в своем Инстаграм, то получите
+              Спасибо, что выбираете кофе <br /> в нашем салоне. <br /> Если Вы отметите нас в своем Инстаграм, то получите
             </Typography>
-            <Typography variant="h6" textAlign='center' sx={{ letterSpacing: '1px' }}>
+            <Typography variant="h6" textAlign='center' sx={{ letterSpacing: '1px', mt: '4px' }}>
               <b className="bg-slate-100 text-[#47501A] py-1 px-3 rounded-lg text-xl">купон на 200 рублей</b>
             </Typography>
             <Typography variant="h6" textAlign='center' sx={{ letterSpacing: '1px' }}>
-              на любую услугу.<br /> Ждем Вас в гости!
+              на любую услугу.
             </Typography>
           </Box>
           <Button variant="contained" onClick={onSubmit}>
@@ -92,11 +92,11 @@ export default function Home() {
                 textAlign='center'
                 sx={{ cursor: 'pointer', my: '4px' }}
                 onClick={() => {
-                  navigator.clipboard.writeText('@elGato-ram')
+                  navigator.clipboard.writeText('@el_gato_ram')
                   setOpenSnack(true)
                 }}
               >
-                <b className="bg-slate-100 text-[#47501A] py-1 px-3 rounded-lg text-xl">@elGato-ram</b>
+                <b className="bg-slate-100 text-[#47501A] py-1 px-3 rounded-lg text-xl">@el_gato_ram</b>
               </Typography>
               <Typography variant="body2" textAlign='center' mb={1}>
                 Нажмите на имя аккаунта, чтобы скопировать его
@@ -105,7 +105,7 @@ export default function Home() {
                 primary={<Typography fontSize={16} textAlign='center'>2. Покажите скрин отметки администратору</Typography>}
               />
               <ListItemText disableTypography
-                primary={<Typography fontSize={16} textAlign='center'>3. Получите единоразовую скидку 200р на любую процедуру</Typography>}
+                primary={<Typography fontSize={16} textAlign='center'>3. Получите единоразовую скидку <br /> <b className="bg-slate-100 text-[#47501A] py-[2px] px-2 rounded-lg text-lg">200₽</b>  на любую процедуру</Typography>}
               />
             </List>
           </Box>
