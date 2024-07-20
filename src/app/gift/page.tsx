@@ -63,7 +63,7 @@ export default function Home() {
             получить подарок
           </Button>
           <Typography variant="body2" textAlign='center'>
-            Время получения подарка ~2 минуты
+            Это займет всего 2 минуты
           </Typography>
         </SliderContainer>
 
