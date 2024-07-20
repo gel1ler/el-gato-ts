@@ -50,7 +50,7 @@ export default function Home() {
               Дорогие посетители!
             </Typography>
             <Typography variant="h6" textAlign='center' sx={{ letterSpacing: '1px' }}>
-              Спасибо, что выбираете кофе <br /> в нашем салоне. <br /> Если Вы отметите нас в своем Инстаграм, то получите
+              Спасибо, что выбираете кофе <br /> в нашем салоне. <br /><br /> Если Вы отметите нас в своем Инстаграм, то получите
             </Typography>
             <Typography variant="h6" textAlign='center' sx={{ letterSpacing: '1px', mt: '4px' }}>
               <b className="bg-slate-100 text-[#47501A] py-1 px-3 rounded-lg text-xl">купон на 200 рублей</b>
@@ -71,13 +71,11 @@ export default function Home() {
         <SliderContainer row>
           <Image
             className="drop-shadow-lg"
-            src='/phone.png'
+            src='/phone2.png'
             width={210}
             height={407}
             alt='phone'
             loading="lazy"
-            placeholder="blur"
-            blurDataURL="/placeholder.png"
           />
           <Box
             className="flex flex-col gap-2 self-stretch"
